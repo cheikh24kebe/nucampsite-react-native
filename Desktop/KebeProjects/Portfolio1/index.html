@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Portfolio | Web Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <meta name="description" content="Portfolio of Cheikh Kebe - Full Stack Developer">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Web Development, Portfolio">
+    <meta name="author" content="Cheikh Kebe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+
+</head>
+<body>
+    <!-- Mouse Follower -->
+    <div class="mouse-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">Portfolio</div>
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#tabbed-section">Projects</a>
+                <a href="#contact">Contact</a>
+                <button class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="menu-btn">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="Creative Developer">Creative Developer</h1>
+            <div class="typing-text">Building Digital Experiences</div>
+            <p class="hero-description">
+                Crafting beautiful and functional websites with modern technologies
+                and a focus on user experience.
+            </p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn primary-btn">
+                    <i class="fas fa-paper-plane"></i>
+                    Get in Touch
+                </a>
+                <a href="#" class="btn secondary-btn">
+                    <i class="fas fa-download"></i>
+                    Download CV
+                </a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="profile-card">
+                <div class="profile-img-container">
+                    <img src="img/Me.jpeg" alt="Profile">
+                </div>
+                <!-- Social Links in Hero Section -->
+                <div class="social-links">
+                    <a href="https://github.com/cheikh24kebe" class="social-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/cheikh-kebe-061971303" class="social-link" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+             </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+        <div class="about-text">
+            <p>A passionate web developer with expertise in creating stunning digital experiences. I combine creativity with technical skills to build modern and user-friendly websites.</p>
+        </div>
+        <div class="about-cards">
+            <div class="about-card">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Development</h3>
+            <p>2+ years of experience in web development</p>
+            </div>
+            <div class="about-card">
+            <i class="fas fa-graduation-cap"></i>
+            <h3>Education</h3>
+            <p>Computer Science Graduate</p>
+            </div>
+            <!-- Projects Card -->
+            <div class="about-card" onclick="scrollToProjectsTab()">
+                <i class="fas fa-rocket"></i>
+                <h3>Projects</h3>
+                <p>3 Projects Completed</p>
+            </div>            
+            <!-- Certificates Card -->
+            <div class="about-card" onclick="scrollToCertificatesTab()">
+                <i class="fas fa-certificate"></i>
+                <h3>Certificates</h3>
+                <p>• Web Development Certification</p>
+                <p>• Data Analytics Certification</p>
+                <p>• Responsive Web Design</p>
+            </div>      
+        </div>
+        </div>
+    </section>
+    
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-content">
+            <div class="skill-category">
+                <h3>Frontend Development</h3>
+                <div class="skill-bars">
+                    <div class="skill-bar" data-progress="90">
+                        <div class="skill-info">
+                            <span>HTML/CSS</span>
+                            <span class="percentage">90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar" data-progress="85">
+                        <div class="skill-info">
+                            <span>JavaScript</span>
+                            <span class="percentage">75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar" data-progress="80">
+                        <div class="skill-info">
+                            <span>React</span>
+                            <span class="percentage">40%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Backend Development</h3>
+                <div class="skill-bars">
+                    <div class="skill-bar" data-progress="75">
+                        <div class="skill-info">
+                            <span>Node.js</span>
+                            <span class="percentage">25%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar" data-progress="70">
+                        <div class="skill-info">
+                            <span>Python</span>
+                            <span class="percentage">70%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabbed Section -->
+    <section id="tabbed-section" class="section">
+        <div class="container">
+        <h2 class="section-title">Explore My Work</h2>
+        <p>Each section represents a milestone in my continuous learning path.</p>
+    
+        <!-- Tabs -->
+        <div class="tabs">
+            <button class="tab-button active" data-tab="projects">Projects</button>
+            <button class="tab-button" data-tab="certificates">Certificates</button>
+        </div>
+    
+        <!-- Tab Content -->
+        <div class="tab-content">
+            <!-- Projects Content -->
+            <div id="projects" class="tab-pane active">
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                <div class="project-image">
+                    <iframe src="https://cheikh-kebe-2cc81.web.app/" width="100%" height="200px" frameborder="0"></iframe>
+                    <div class="project-overlay">
+                    <div class="project-links">
+                        <a href="https://cheikh-kebe-2cc81.web.app/" class="project-link" target="_blank"><i class="fas fa-link"></i></a>
+                        <a href="https://github.com/cheikh24kebe/coffeeshop" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Coffeeshop Website</h3>
+                    <p>A full-stack e-commerce solution with modern UI/UX</p>
+                    <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    </div>
+                </div>
+                </div>
+    
+                <!-- Project 2 -->
+                <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/images/project2.jpg" alt="Project 2">
+                    <div class="project-overlay">
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Portfolio Generator</h3>
+                    <p>Dynamic portfolio website generator for developers</p>
+                    <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    </div>
+                </div>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+            </div>
+    
+            <!-- Certificates Content -->
+            <div id="certificates" class="tab-pane">
+            <div class="certificates-grid">
+                <!-- Certificate 1 -->
+                <div class="certificate-card">
+                    <a href="https://coursera.org/share/86b0f821fb90a49df1bd73ad43851964" target="_blank">
+                        <div class="certificate-image">
+                            <img src="img/dip1.jpeg" alt="Certificate 1">
+                        </div>
+                    </a>
+                </div>
+                <!-- Certificate 2 -->
+                <div class="certificate-card">
+                    <a href="https://coursera.org/share/358f2d6ac23ea1b8f1fcfeb70c446657" target="_blank">
+                        <div class="certificate-image">
+                            <img src="img/dip2.jpeg" alt="Certificate 1">
+                        </div>
+                    </a>
+                </div>
+                 <!-- Certificate 3 -->
+                 <div class="certificate-card">
+                    <a href="https://coursera.org/share/b1c2a371aa0b506f28e648351021d76a" target="_blank">
+                        <div class="certificate-image">
+                            <img src="img/dip3.jpeg" alt="Certificate 1">
+                        </div>
+                    </a>
+                </div>
+                 <!-- Certificate 4 -->
+                 <div class="certificate-card">
+                    <a href="https://coursera.org/share/0b726aaf447da2ee398cb74c740b95c9" target="_blank">
+                        <div class="certificate-image">
+                            <img src="img/dip4.jpeg" alt="Certificate 1">
+                        </div>
+                    </a>
+                </div>
+                 <!-- Certificate 5 -->
+                 <div class="certificate-card">
+                    <a href="link-to-certificate.pdf" target="_blank">
+                        <div class="certificate-image">
+                            <img src="img/dip2.jpeg" alt="Certificate 1">
+                        </div>
+                    </a>
+                </div>
+                 <!-- Certificate 6 -->
+                 <div class="certificate-card">
+                    <a href="link-to-certificate.pdf" target="_blank">
+                        <div class="certificate-image">
+                            <img src="img/dip2.jpeg" alt="Certificate 1">
+                        </div>
+                    </a>
+                </div>
+                 <!-- Certificate 7 -->
+                 <div class="certificate-card">
+                    <a href="link-to-certificate.pdf" target="_blank">
+                        <div class="certificate-image">
+                            <img src="img/dip2.jpeg" alt="Certificate 1">
+                        </div>
+                    </a>
+                </div>
+                 <!-- Certificate 8 -->
+                 <div class="certificate-card">
+                    <a href="link-to-certificate.pdf" target="_blank">
+                        <div class="certificate-image">
+                            <img src="img/dip2.jpeg" alt="Certificate 1">
+                        </div>
+                    </a>
+                </div>
+                <!-- Certificate 9 -->
+                <div class="certificate-card">
+                    <a href="https://learn.nucamp.co/badges/badge.php?hash=115c2a8f0cb0d280412ae9cdbbc819efef415808" target="_blank">
+                        <div class="certificate-image">
+                            <img src="img/dip9.jpeg" alt="Certificate 1">
+                        </div>
+                    </a>
+                </div>
+                <!-- Certificate 8 -->
+                <div class="certificate-card">
+                    <a href="link-to-certificate.pdf" target="_blank">
+                        <div class="certificate-image">
+                            <img src="img/dip2.jpeg" alt="Certificate 1">
+                        </div>
+                    </a>
+                </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div class="contact-details">
+                        <h3>Email</h3>
+                        <p>cheikh.career@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div class="contact-details">
+                        <h3>Phone</h3>
+                        <p>+1 929 586 5078</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="contact-details">
+                        <h3>Location</h3>
+                        <p>New York, USA</p>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn primary-btn">
+                    <i class="fas fa-paper-plane"></i>
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Cheikh Kebe. All rights reserved.</p>
+            <div class="footer-social-links">
+                <a href="https://github.com/cheikh24kebe" class="footer-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/cheikh-kebe-061971303" class="footer-link" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
