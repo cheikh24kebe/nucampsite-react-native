@@ -8,10 +8,10 @@ export const fetchMenuItems = async () => {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     const data = await response.json();
-    console.log(`✅ Received ${data.length} menu items from backend`);
+    console.log(`Received ${data.length} menu items from backend`);
     return data;
   } catch (error) {
-    console.error('❌ Error fetching menu items:', error);
+    console.error('Error fetching menu items:', error);
     // Return fallback data if backend fails
     return getFallbackMenuItems();
   }
@@ -19,7 +19,7 @@ export const fetchMenuItems = async () => {
 
 export const placeOrder = async (orderData) => {
   try {
-    console.log('📦 Placing order...', orderData);
+    console.log('Placing order...', orderData);
     const response = await fetch(`${API_BASE}/orders`, {
       method: 'POST',
       headers: {
@@ -31,10 +31,10 @@ export const placeOrder = async (orderData) => {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     const data = await response.json();
-    console.log('✅ Order placed successfully:', data);
+    console.log('Order placed successfully:', data);
     return data;
   } catch (error) {
-    console.error('❌ Error placing order:', error);
+    console.error('Error placing order:', error);
     throw error;
   }
 };
